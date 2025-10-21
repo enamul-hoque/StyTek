@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "StyTek",
+  "version": "1.0",
+  "description": "Injects domain-specific CSS files per site.",
+  "permissions": ["scripting", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["source/*.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
