@@ -6,18 +6,51 @@
     counter-increment: HostingList;
 }
 
+/** Hosting List Page **/
+.uihosting .subscriptions-list-row .btn-head > .btn {
+    background: #fff;
+    font-weight: 400;
+    text-transform: lowercase;
+    padding-top: 6px;
+    border-color: #8cc1c1;
+    text-shadow: none;
+}
+.uihosting .subscriptions-list-row .btn-head > .btn:first-letter {
+    text-transform: uppercase;
+}
+.uihosting .subscriptions-list-row .btn-head > .btn:hover {
+    background-color: #f2f2f2;
+}
+.uihosting .subscriptions-list-row .btn-head > .btn:focus {
+    box-shadow: none;
+}
+.uihosting .subscriptions-list-row .btn-head > .btn:active {
+    color: #fff;
+    background-color: #8cc1c1;
+}
 
-.gb-uishoppingcart-app [data-e2e-id="sc-products-list"] {
+.uihosting .subscriptions-list-row .dropdown-toggle {
+    display: none;
+}
+
+.uihosting .subscriptions-list-row .dropdown-menu {
+    position: relative;
     display: flex;
-    flex-direction: column-reverse;
-    counter-reset: CartItems;
-}
-.gb-uishoppingcart-app [data-e2e-id="sc-product-title"]:before {
-    content: counter(CartItems) '. ';
-    counter-increment: CartItems;
+    box-shadow: none;
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-top: 0;
 }
 
+.uihosting .subscriptions-list-row .dropdown-menu li {
+    border-width: 0;
+}
 
-.gb-uishoppingcart-app .gb-cart-item:last-child {
-    border-bottom-width: 0 !important;
+.uihosting .subscriptions-list-row .dropdown-menu li:first-child a {
+    border-radius: 0;
+}
+
+.uihosting .subscriptions-list-row .dropdown-menu li:last-child a {
+    border-radius: 0 4px 4px 0;
 }

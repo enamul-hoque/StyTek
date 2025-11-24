@@ -1,0 +1,15 @@
+/* Cart Page */
+.gb-uishoppingcart-app [data-e2e-id="sc-products-list"] {
+    display: flex;
+    flex-direction: column-reverse;
+    counter-reset: CartItems;
+}
+
+.gb-uishoppingcart-app [data-e2e-id="sc-product-title"]:before {
+    content: counter(CartItems) '. ';
+    counter-increment: CartItems;
+}
+
+.gb-uishoppingcart-app .gb-cart-item:last-child {
+    border-bottom-width: 0 !important;
+}

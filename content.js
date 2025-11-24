@@ -9,11 +9,11 @@
       link.rel = "stylesheet";
       link.href = cssUrl;
       document.head.appendChild(link);
-      console.log(`[StyTek] Injected ${cssUrl}`);
+      // console.log(`[StyTek] Injected ${cssUrl}`);
     } else {
-      console.log(`[StyTek] No CSS for ${domain}`);
+      // console.log(`[StyTek] No CSS for ${domain}`);
     }
   } catch (e) {
-    console.log(`[StyTek] Failed to fetch CSS: ${e.message}`);
+    // console.log(`[StyTek] Failed to fetch CSS: ${e.message} for ${domain}`);
   }
 })();

@@ -1,0 +1,5 @@
+/* Trello Card Description - Link Style */
+div[data-testid="description-content-area"] a[href] {
+    color: var(--ds-link, #0c66e4);
+    text-decoration: none;
+}
