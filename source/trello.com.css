@@ -1,5 +1,32 @@
+/** Card List - Count **/
+ol[data-testid="list-cards"] {
+    counter-reset: cardCount;
+}
+ol[data-testid="list-cards"] a[data-testid="card-name"]:before {
+    content: counter(cardCount) ". ";
+    counter-increment: cardCount;
+}
+
+/** Card - Width **/
+div[data-testid="card-back-name"] {
+    width: calc(100vw - 30px) !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
 /* Trello Card Description - Link Style */
-div[data-testid="description-content-area"] a[href] {
+div[data-testid="description-content-area"] a[href],
+ul[data-testid="checklist-items"] a[href] {
     color: var(--ds-link, #0c66e4);
     text-decoration: none;
+}
+
+/** Trello Card: List - Counter **/
+ul[data-testid="checklist-items"] {
+    counter-reset: trelloListCount;
+}
+
+ul[data-testid="checklist-items"] p[data-renderer-start-pos]:before {
+    content: counter(trelloListCount) '. ';
+    counter-increment: trelloListCount;
 }

@@ -24,7 +24,10 @@
 .uihosting .subscriptions-list-row .btn-head > .btn:focus {
     box-shadow: none;
 }
-.uihosting .subscriptions-list-row .btn-head > .btn:active {
+.uihosting .subscriptions-list-row .btn-head > .btn:focus,
+.uihosting .subscriptions-list-row .btn-head > .btn:active,
+.uihosting .subscriptions-list-row .btn-head > .btn:visited,
+.uihosting .subscriptions-list-row .btn-head > .btn:focus-visible {
     color: #fff;
     background-color: #8cc1c1;
 }
