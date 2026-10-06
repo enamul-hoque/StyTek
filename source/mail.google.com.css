@@ -1,0 +1,18 @@
+/** Note **/
+body:before {
+    content: "Mohon: Revision / Spam";
+    position: fixed;
+    top: 23px;
+    left: 1140px;
+    font-size: 14px;
+    z-index: 999;
+}
+
+/** Email Count **/
+table[role="grid"] {
+    counter-reset: emailCount;
+}
+table[role="grid"] span[email][name][data-hovercard-id]:before {
+    content: counter(emailCount) ". ";
+    counter-increment: emailCount;
+}

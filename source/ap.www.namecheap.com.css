@@ -6,6 +6,39 @@
     counter-increment: HostingList;
 }
 
+/** Domain List Page **/
+/* .gb-domains-fragment .gb-checkbox__input,
+.gb-domains-fragment .gb-checkbox__label:before,
+.gb-scope .gb-icon,
+.gb-domains-fragment .gb-table--grid .gb-domain-info,
+.gb-domains-fragment .gb-table--grid tbody td ~ td {
+    display: none !important;
+}
+
+.gb-domains-fragment .gb-table--grid tbody tr {
+    background-color: transparent;
+    min-height: 0;
+    padding: 0;
+    border-width: 0;
+}
+.gb-domains-fragment .gb-table--grid tbody tr > td {
+    padding: 0;
+    border-width: 0;
+}
+.gb-domains-fragment .gb-table--grid tbody td[class*=gb-col] {
+    border-width: 0;
+} */
+
+/*
+.gb-table {
+    counter-reset: domainList;
+}
+.gb-domain-name > label > span:before {
+    content: counter(domainList) ". ";
+    counter-increment: domainList;
+}
+*/
+
 /** Hosting List Page **/
 .uihosting .subscriptions-list-row .btn-head > .btn {
     background: #fff;

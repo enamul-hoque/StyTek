@@ -1,0 +1,4 @@
+/* Disable Link Preview Tooltips in Google Docs */
+.waffle-multilink-tooltip {
+    display: none;
+}
